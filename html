@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favorite Foods Survey</title>
+</head>
+
+<body>
+    <h1>Favorite Foods Survey</h1>
+    <p>Please take a moment to answer a few questions about your favorite foods.</p>
+    <form id="surveyForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <p>What is your favorite cuisine?</p>
+        <input type="radio" id="cuisine1" name="cuisine" value="italian">
+        <label for="cuisine1">Italian</label><br>
+        <input type="radio" id="cuisine2" name="cuisine" value="mexican">
+        <label for="cuisine2">Mexican</label><br>
+        <input type="radio" id="cuisine3" name="cuisine" value="indian">
+        <label for="cuisine3">Indian</label><br>
+        <input type="radio" id="cuisine4" name="cuisine" value="japanese">
+        <label for="cuisine4">Japanese</label><br>
+        <input type="radio" id="cuisine5" name="cuisine" value="other">
+        <label for="cuisine5">Other</label>
+        <br><br>
+
+        <p>Which of the following foods do you enjoy the most? (Select all that apply)</p>
+        <input type="checkbox" id="food1" name="foods" value="pizza">
+        <label for="food1">Pizza</label><br>
+        <input type="checkbox" id="food2" name="foods" value="tacos">
+        <label for="food2">Tacos</label><br>
+        <input type="checkbox" id="food3" name="foods" value="sushi">
+        <label for="food3">Sushi</label><br>
+        <input type="checkbox" id="food4" name="foods" value="curry">
+        <label for="food4">Curry</label><br>
+        <input type="checkbox" id="food5" name="foods" value="burger">
+        <label for="food5">Burger</label><br>
+        <input type="checkbox" id="food6" name="foods" value="pasta">
+        <label for="food6">Pasta</label><br>
+        <input type="checkbox" id="food7" name="foods" value="other">
+        <label for="food7">Other</label>
+        <br><br>
+
+        <label for="feedback">Any specific food item or dish you'd like to mention?</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <button type="button" onclick="cancelForm()">Cancel</button>
+    </form>
+
+    <script>
+        function cancelForm() {
+            // Add any actions here you want to perform when the "Cancel" button is clicked.
+            alert("Survey cancelled.");
+        }
+    </script>
+</body>
+
+</html>
